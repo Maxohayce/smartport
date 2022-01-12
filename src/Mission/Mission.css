@@ -1,0 +1,72 @@
+.Mission {
+    height: 100vh;
+    width: 100%;
+    color: aquamarine;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: Give You Glory;
+}
+
+
+.Mission img {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    stroke: #fff;
+}
+
+.Mission img:nth-child(1) {
+    left: -22%;
+}
+
+.Mission img:nth-child(2) {
+    left: -20%;
+}
+
+.Mission img:nth-child(3) {
+    left: 40%;
+    height: 20em;
+    width: 5em;
+}
+
+@media screen and (max-width: 600px){
+    .Mission h3 {
+        width: 70%;
+        letter-spacing: 0.1em;
+    }
+    
+    
+    .Mission img {
+        width: 50%;
+        height: 30%;
+    }
+    
+    .Mission img:nth-child(1) {
+        left: -22%;
+    }
+    
+    .Mission img:nth-child(2) {
+        left: -20%;
+    }
+
+    .Mission img:nth-child(3) {
+        left: 10%
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .Mission h3 {
+        width: 70%;
+        letter-spacing: 0.1em;
+    }
+    
+    
+    .Mission img {
+        width: 50%;
+        height: 50%;
+    }
+}

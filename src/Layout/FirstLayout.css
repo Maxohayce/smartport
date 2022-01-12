@@ -1,0 +1,134 @@
+.Layout {
+    width: 100%;
+    display: flex;
+    padding: 0.4rem;
+    height: 100vh;
+    position: relative;
+}
+.rightUnderline {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 65%;
+    top: 25%;
+}
+
+.LeftLayout{
+    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em;
+    text-align: start;
+    position: relative;
+}
+
+.LeftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 50%   ;
+    width: 60%;
+}
+
+.LeftContainer h5 {
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+}
+
+
+.R-Layout {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em;
+    margin-right: 3em;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .Layout {
+        /* padding: 0.4rem; */
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .rightUnderline {
+        width: 100px;
+        height: 100px;
+        left: 70%;
+        top: 70%;
+    }
+    
+    .LeftLayout{
+        width: auto;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .LeftContainer {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .R-Layout {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .R-Layout img {
+        height: max-content;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Layout {
+        /* padding: 0.4rem; */
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .rightUnderline {
+        width: 550px;
+        height: 550px;
+        left: 40%;
+        top: 60%;
+    }
+    
+    .LeftLayout{
+        width: auto;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .LeftContainer {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .R-Layout {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .R-Layout img {
+        height: 100%;
+        width: 45%;
+    } 
+}

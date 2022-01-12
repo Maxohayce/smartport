@@ -1,0 +1,141 @@
+.SecondLayout {
+    width: 100%;
+    display: flex;
+    padding: 0.4rem;
+    height: 100vh;
+    position: relative;
+}
+
+.SecondLayout > img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.SecondLayout > img:first-child {
+    left: -10%;
+}
+
+.SecondLayout > img:nth-child(2) {
+    left: 10%;
+    top: 3%;
+}
+
+.SecondRightLayout {
+    width: 42%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    text-align: start;
+    position: relative;
+}
+
+.SecondRightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50vh;
+    width: 70%;
+}
+
+.SecondLeftLayout {
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3em;
+    position: relative;
+}
+
+@media screen and (max-width: 600px){
+
+    .SecondLayout {
+        flex-direction: column;
+    }
+    
+    .SecondLayout > img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .SecondLayout > img:first-child {
+        left: -10%;
+    }
+    
+    .SecondLayout > img:nth-child(2) {
+        left: 35%;
+        top: 3%;
+    }
+    
+    .SecondRightLayout {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .SecondRightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .SecondLeftLayout {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .SecondLayout {
+        flex-direction: column;
+    }
+    
+    .SecondLayout > img {
+        width: 550px;
+        height: 550px;
+    }
+    
+    .SecondLayout > img:first-child {
+        left: -15%;
+    }
+    
+    .SecondLayout > img:nth-child(2) {
+        left: 23%;
+        top: 16%;
+    }
+    
+    .SecondRightLayout {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        height: 40%;
+    }
+    
+    .SecondRightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .SecondLeftLayout {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .SecondLeftLayout img{
+        width: 45%;
+    }
+    
+}

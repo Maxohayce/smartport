@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    background-color: aquamarine;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.header img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+.header img:nth-child(1) {
+    left: 45em;
+}
+
+.header img:nth-child(2) {
+    top: 2em;
+
+}
+.header img:nth-child(3) {
+    left: 41em;
+    top: 16.6em;
+}
+
+.h-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 5em;
+    margin-top: 6em;
+    width: 90%;
+}
+
+.h-container h1{
+    font-size: 5em;
+    margin-bottom: 0.4em;
+}
+
+.h-container p {
+    font-family: Give You Glory;
+    font-size: 2.5em;
+}
+
+@media only screen and (max-width: 600px ) {
+    .header img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .h-container {
+        margin-top: 50%;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .h-container h1 {
+      font-size: 3em;  
+    }
+
+    .h-container p {
+        font-size: 2.5em;
+    }
+
+    .header img:nth-child(1) {
+        left: 70%;
+    }
+
+    .header img:nth-child(2) {
+        top: 40%;
+    
+    }
+    .header img:nth-child(3) {
+        left: 67%;
+        top: 85%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .header {
+        overflow-x: hidden;
+    }
+    .header img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .h-container {
+        margin-top: 50%;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .h-container h1 {
+      font-size: 3em;  
+    }
+
+    .h-container p {
+        font-size: 2.5em;
+    }
+
+    .header img:nth-child(1) {
+        left: 70%;
+    }
+
+    .header img:nth-child(2) {
+        top: 30%;
+    
+    }
+    .header img:nth-child(3) {
+        left: 67%;
+        top: 80%;
+    }
+}
+
+
